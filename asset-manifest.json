@@ -1,22 +1,23 @@
 {
   "files": {
-    "main.css": "/cards_project/static/css/main.9d19fa9f.chunk.css",
-    "main.js": "/cards_project/static/js/main.dcd304e7.chunk.js",
-    "main.js.map": "/cards_project/static/js/main.dcd304e7.chunk.js.map",
-    "runtime-main.js": "/cards_project/static/js/runtime-main.66edfb85.js",
-    "runtime-main.js.map": "/cards_project/static/js/runtime-main.66edfb85.js.map",
-    "static/js/2.2f8263e1.chunk.js": "/cards_project/static/js/2.2f8263e1.chunk.js",
-    "static/js/2.2f8263e1.chunk.js.map": "/cards_project/static/js/2.2f8263e1.chunk.js.map",
-    "static/js/3.1ff08566.chunk.js": "/cards_project/static/js/3.1ff08566.chunk.js",
-    "static/js/3.1ff08566.chunk.js.map": "/cards_project/static/js/3.1ff08566.chunk.js.map",
+    "main.css": "/cards_project/static/css/main.d3503e13.chunk.css",
+    "main.js": "/cards_project/static/js/main.f0cdcf9f.chunk.js",
+    "main.js.map": "/cards_project/static/js/main.f0cdcf9f.chunk.js.map",
+    "runtime-main.js": "/cards_project/static/js/runtime-main.d3970525.js",
+    "runtime-main.js.map": "/cards_project/static/js/runtime-main.d3970525.js.map",
+    "static/js/2.943f2957.chunk.js": "/cards_project/static/js/2.943f2957.chunk.js",
+    "static/js/2.943f2957.chunk.js.map": "/cards_project/static/js/2.943f2957.chunk.js.map",
+    "static/js/3.116a1609.chunk.js": "/cards_project/static/js/3.116a1609.chunk.js",
+    "static/js/3.116a1609.chunk.js.map": "/cards_project/static/js/3.116a1609.chunk.js.map",
     "index.html": "/cards_project/index.html",
-    "static/css/main.9d19fa9f.chunk.css.map": "/cards_project/static/css/main.9d19fa9f.chunk.css.map",
-    "static/js/2.2f8263e1.chunk.js.LICENSE.txt": "/cards_project/static/js/2.2f8263e1.chunk.js.LICENSE.txt"
+    "static/css/main.d3503e13.chunk.css.map": "/cards_project/static/css/main.d3503e13.chunk.css.map",
+    "static/js/2.943f2957.chunk.js.LICENSE.txt": "/cards_project/static/js/2.943f2957.chunk.js.LICENSE.txt",
+    "static/media/SmoothJauntyBighornedsheep-max-1mb.61c33806.gif": "/cards_project/static/media/SmoothJauntyBighornedsheep-max-1mb.61c33806.gif"
   },
   "entrypoints": [
-    "static/js/runtime-main.66edfb85.js",
-    "static/js/2.2f8263e1.chunk.js",
-    "static/css/main.9d19fa9f.chunk.css",
-    "static/js/main.dcd304e7.chunk.js"
+    "static/js/runtime-main.d3970525.js",
+    "static/js/2.943f2957.chunk.js",
+    "static/css/main.d3503e13.chunk.css",
+    "static/js/main.f0cdcf9f.chunk.js"
   ]
 }

@@ -12,7 +12,7 @@ import CheckEmail from "../../../2_feaches_HW/f1-auth/a4_password/CheckEmail";
 export const PATH = {
     START_PAGE: '/*',
     TEST_PAGE: '/test',
-    LOGIN_PAGE: '/login/*',
+    LOGIN_PAGE: '/login',
     ERROR404_PAGE: '/error404',
     PROFILE_PAGE: '/profile',
     REGISTRATION_PAGE: '/registration',

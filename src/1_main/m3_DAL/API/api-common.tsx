@@ -1,7 +1,7 @@
 import axios, {AxiosResponse} from "axios";
 
 const instance = axios.create({
-    baseURL: 'https://neko-back.herokuapp.com/2.0/',
+    baseURL: 'https://neko-back.herokuapp.com/',
     //baseURL: 'http://localhost:7542/',
     withCredentials: true,
 })
@@ -36,7 +36,8 @@ export const authAPI = {
     },
     forgotPassword(emailUser: string, emailFromWho?: string) {
         //вместо локал в message добавить нашу gt-page и на стр на которой восстановление пароля
-        const message: string = `<div style="background-color: lime; padding: 15px"> password recovery link: <a href='https://mayariff.github.io/cards_project/#/set-new-password/$token$'> link</a></div>`
+       /* 'https://mayariff.github.io/cards_project/set-new-password/$token$'*/
+        const message: string = `<div style="background-color: lime; padding: 15px"> password recovery link: <a href='https://mayariff.github.io/cards_project/set-new-password/$token$'/> link</a></div>`
         return instance.post<{ email: string, message: string, from?: string }, AxiosResponse<ResponseType<{ info: string }>>>('2.0/auth/forgot', {
             email: emailUser,
             message,

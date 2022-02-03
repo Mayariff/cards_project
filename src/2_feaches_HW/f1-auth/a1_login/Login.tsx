@@ -2,7 +2,7 @@ import React, {ChangeEventHandler, MouseEventHandler, useEffect, useState} from 
 import {useDispatch, useSelector} from "react-redux";
 import {AppRootStateType} from "../../../1_main/m2_BLL/store";
 import {LoginInTC} from "../../../1_main/m2_BLL/1n_Auth-reduser";
-import {Navigate, NavLink} from "react-router-dom";
+import {Navigate, Link } from "react-router-dom";
 import {setAppErrorAC} from "../../../1_main/m2_BLL/0n_App-reduser";
 import {PATH} from "../../../1_main/m1-UI/routes/Routes";
 
@@ -64,11 +64,12 @@ const Login = () => {
                     Password:
                     <input type={"checkbox"} value={'rememberMe'} onChange={checkBoxHandler}/>
                 </label>
-                <NavLink  to={PATH.FORGOT_PAGE}>Forgot Password</NavLink>
+                <Link  to={PATH.FORGOT_PAGE}>Forgot Password</Link>
+
                 <button type={'submit'} onClick={onClickHandler}>Register</button>
             </form>
             <div>Don't have an account?</div>
-            <a href={'/registration'}>Sign up</a>
+            <Link to={PATH.REGISTRATION_PAGE}>Sign up</Link>
         </div>
     );
 };

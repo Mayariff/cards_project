@@ -6,8 +6,8 @@ import {setAppErrorAC} from "./0n_App-reduser";
 const initialState = {
     isRegistrated: false,
     isLoggedIn: false,
-    email: '',
-    from: '' as string|undefined
+    emailIsBeSend: false,
+    email: ''
 }
 type InitialStateType = typeof initialState
 
@@ -26,7 +26,7 @@ export const authReducer = (state: InitialStateType = initialState, action: Acti
         case SET_IS_LOGGED_IN:
             return {...state, isLoggedIn: action.payload.isLoggedIn}
         case SET_EMAIL_PASSWORD_RECOVERY:
-            return {...state, email: action.payload.email , from: action.payload.from }
+            return {...state, emailIsBeSend: action.payload.emailIsBeSend, email: action.payload.email}
         default:
             return state
     }
@@ -38,8 +38,8 @@ export const setIsRegistratedAC = ( isRegistrated: boolean) => ({type: SET_IS_RE
 export const setIsLoginInAC = ( isLoggedIn: boolean) => ({type: SET_IS_LOGGED_IN, payload:{
         isLoggedIn
     }} as const)
-export const setEmailForPasswordRecoveryAC = ( email: string, from?:string) => ({type: SET_EMAIL_PASSWORD_RECOVERY, payload:{
-        email, from
+export const setEmailForPasswordRecoveryAC = ( emailIsBeSend: boolean, email:string) => ({type: SET_EMAIL_PASSWORD_RECOVERY, payload:{
+        emailIsBeSend, email
     }} as const)
 
 // thunks
@@ -62,7 +62,7 @@ authAPI.login(email, password, rememberMe)
 
 export const setEmailForPasswordRecoveryTC = (email: string,emailFromWho?: string)=>(dispatch: Dispatch)=>{
     authAPI.forgotPassword(email,emailFromWho)
-        .then(()=>dispatch(setEmailForPasswordRecoveryAC(email,emailFromWho) ))
+        .then((res)=>dispatch(setEmailForPasswordRecoveryAC(true, email) ))
         .catch((e)=> {
             let error  = e.response ? e.response.data.error :  (e.message + ', more details in the console');
             dispatch(setAppErrorAC(error))

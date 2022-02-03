@@ -3,7 +3,7 @@ import React from 'react';
 const PasswordEnter = () => {
     return (
         <div>
-            ENTERING PASSWORD PAGE
+            <h2>ENTERING PASSWORD PAGE</h2>
         </div>
     );
 };

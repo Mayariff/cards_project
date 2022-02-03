@@ -63,11 +63,11 @@ const Login = () => {
                     Password:
                     <input type={"checkbox"} value={'rememberMe'} onChange={checkBoxHandler}/>
                 </label>
-                <a href={PATH.FORGOT_PAGE}>Forgot Password</a>
+                <a href={'#/forgot_password'}>Forgot Password</a>
                 <button type={'submit'} onClick={onClickHandler}>Register</button>
             </form>
             <div>Don't have an account?</div>
-            <a href={PATH.REGISTRATION_PAGE}>Sign up</a>
+            <a href={'/registration'}>Sign up</a>
         </div>
     );
 };

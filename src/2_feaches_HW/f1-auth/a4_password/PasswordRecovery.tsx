@@ -25,7 +25,7 @@ const PasswordRecovery = () => {
             <span>Enter your email address and we will send you future instructions</span>
             <button onClick={onClickHandler}>Send instructions</button>
             <span>Did your remember your password?</span>
-            <a href={PATH.LOGIN_PAGE}>Try to logging in</a>
+            <a href={'#/login'}>Try to logging in</a>
         </div>
     );
 };

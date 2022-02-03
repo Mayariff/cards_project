@@ -5,6 +5,7 @@ import React from "react";
 import {Route, Routes} from 'react-router-dom'
 import Profile from "../../../2_feaches_HW/f1-auth/a3_profile/Profile";
 import Registration from "../../../2_feaches_HW/f1-auth/a2_registration/Registration";
+import PasswordRecovery from "../../../2_feaches_HW/f1-auth/a4_password/PasswordRecovery";
 
 export const PATH = {
     START_PAGE: '/*',
@@ -12,7 +13,8 @@ export const PATH = {
     LOGIN_PAGE: '/login',
     ERROR404_PAGE: '/error404',
     PROFILE_PAGE: '/profile',
-    REGISTRATION_PAGE: '/registration'
+    REGISTRATION_PAGE: '/registration',
+    FORGOT_PAGE:'/forgot_password'
 }
 
 function Routing() {
@@ -25,6 +27,7 @@ function Routing() {
                 <Route path={PATH.REGISTRATION_PAGE} element={<Registration/>}/>
                 <Route path={PATH.PROFILE_PAGE} element={<Profile />}/>
                 <Route path={PATH.ERROR404_PAGE} element={<Error404/>}/>
+                <Route path={PATH.FORGOT_PAGE} element={<PasswordRecovery />}/>
             </Routes>
         </div>
     )

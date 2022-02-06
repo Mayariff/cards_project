@@ -2,14 +2,14 @@
     display: inline-block;
     color: #fff;
     background: linear-gradient(to bottom, #00acee, #0072e0);
-    font-size: 14px;
-    min-width: 80px;
+    font-size: 16px;
+    min-width: 100px;
     font-weight: 100;
-    padding: 2px 10px;
+    padding: 6px 10px;
     border-radius: 100px;
     border: 3px solid transparent;
     text-decoration: none;
-    margin: 5px;
+    margin: 15px 15px 10px;
 }
 .default:hover {
     background: linear-gradient(to bottom, #00e6ee, #009de0);

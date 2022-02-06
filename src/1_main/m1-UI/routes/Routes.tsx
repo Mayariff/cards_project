@@ -4,10 +4,12 @@ import Error404 from "../../../2_feaches_HW/f1-auth/a4_error404/Error404";
 import React from "react";
 import {Route, Routes} from 'react-router-dom'
 import Profile from "../../../2_feaches_HW/f1-auth/a3_profile/Profile";
-import Registration from "../../../2_feaches_HW/f1-auth/a2_registration/Registration";
+
 import PasswordRecovery from "../../../2_feaches_HW/f1-auth/a4_password/PasswordRecovery";
 import PasswordEnter from "../../../2_feaches_HW/f1-auth/a4_password/PasswordEnter";
 import CheckEmail from "../../../2_feaches_HW/f1-auth/a4_password/CheckEmail";
+import Registration from "../../../2_feaches_HW/f1-auth/a2_registration/Registration";
+
 
 export const PATH = {
     START_PAGE: '/*',
@@ -26,7 +28,7 @@ function Routing() {
         <div>
             <Routes>
                 <Route path={PATH.START_PAGE} element={<Test/>}/>
-                <Route path={PATH.TEST_PAGE} element={<Test/>}/>
+                <Route path={PATH.TEST_PAGE} element={<Test />}/>
                 <Route path={PATH.LOGIN_PAGE} element={<Login/>} />
                 <Route path={PATH.REGISTRATION_PAGE} element={<Registration/>}/>
                 <Route path={PATH.PROFILE_PAGE} element={<Profile />}/>

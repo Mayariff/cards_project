@@ -25,7 +25,7 @@
 label {
     cursor: pointer;
 }
-label:hover {
+.radioLabel:hover {
     font-size: 1.17rem;
     color: rgba(0,0,0,0.5);
 }

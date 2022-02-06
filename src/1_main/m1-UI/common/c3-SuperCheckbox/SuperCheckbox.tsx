@@ -7,6 +7,7 @@ type DefaultInputPropsType = DetailedHTMLProps<InputHTMLAttributes<HTMLInputElem
 type SuperCheckboxPropsType = DefaultInputPropsType & {
     onChangeChecked?: (checked: boolean) => void
     spanClassName?: string
+    V?: boolean
 }
 
 const SuperCheckbox: React.FC<SuperCheckboxPropsType> = (
@@ -25,7 +26,8 @@ const SuperCheckbox: React.FC<SuperCheckboxPropsType> = (
     }
 
     return (
-        <label>
+        <div className={s.margin}>
+            <label className={s.checkboxLabel}>
             <input
                 type={'checkbox'}
                 onChange={onChangeCallback}
@@ -34,7 +36,7 @@ const SuperCheckbox: React.FC<SuperCheckboxPropsType> = (
                 {...restProps} // отдаём инпуту остальные пропсы если они есть (checked например там внутри)
             />
             {children && <span className={s.spanClassName}>{children}</span>}
-        </label> // благодаря label нажатие на спан передастся в инпут
+        </label></div>
     )
 }
 

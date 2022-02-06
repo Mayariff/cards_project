@@ -1,0 +1,7 @@
+.img{
+
+    max-width: 85px;
+    position: absolute;
+    bottom: 5px;
+    z-index: -1;
+}

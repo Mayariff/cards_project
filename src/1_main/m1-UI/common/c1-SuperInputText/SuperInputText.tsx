@@ -25,9 +25,9 @@ const SuperInputText: React.FC<SuperInputTextPropsType> = (
     }
 ) => {
     const onChangeCallback = (e: ChangeEvent<HTMLInputElement>) => {
+
         onChange // если есть пропс onChange
         && onChange(e) // то передать ему е (поскольку onChange не обязателен)
-
         onChangeText && onChangeText(e.currentTarget.value)
     }
     const onKeyPressCallback = (e: KeyboardEvent<HTMLInputElement>) => {
@@ -45,12 +45,11 @@ const SuperInputText: React.FC<SuperInputTextPropsType> = (
     return (
         <>
             <input
-                type={'text'}
                 onChange={onChangeCallback}
                 onKeyPress={onKeyPressCallback}
                 className={finalInputClassName}
                 placeholder={error}
-
+                type={type}
                 {...restProps} // отдаём инпуту остальные пропсы если они есть (value например там внутри)
             />
 

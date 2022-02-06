@@ -52,9 +52,9 @@ const Test = () => {
                 </div>
                 <div className={s.column}>
                     <h3 className={s.header}>Кнопки </h3>
-                        <SuperButton onClick={()=>alert('click <default>')}> default </SuperButton>
-                        <SuperButton red onClick={()=>alert('click <delete>')}> delete </SuperButton>
-                        <SuperButton disabled> disabled </SuperButton>
+                        <SuperButton onClick={()=>alert('click <default>')} nameButton={'default'} />
+                        <SuperButton red onClick={()=>alert('click <delete>')} nameButton={'delete'} />
+                        <SuperButton disabled nameButton={'disabled'} />
                 </div>
                 <div className={s.column}>
                     <h3 className={s.header}>Чек-Бокс </h3>

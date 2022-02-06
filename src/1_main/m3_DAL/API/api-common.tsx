@@ -37,7 +37,7 @@ export const authAPI = {
     forgotPassword(emailUser: string, emailFromWho?: string) {
         //вместо локал в message добавить нашу gt-page и на стр на которой восстановление пароля
        /* 'https://mayariff.github.io/cards_project/set-new-password/$token$'*/
-        const message: string = `<div style="background-color: lime; padding: 15px"> password recovery link: <a href='http://localhost:3000/set-new-password/$token$' /> link</a></div>`
+        const message: string = `<div style="background-color: lime; padding: 15px"> password recovery link: <a href='http://mayariff.github.io/cards_project/set-new-password/$token$' /> link</a></div>`
         return instance.post<{ email: string, message: string, from?: string }, AxiosResponse<ResponseType<{ info: string }>>>('2.0/auth/forgot', {
             email: emailUser,
             message,

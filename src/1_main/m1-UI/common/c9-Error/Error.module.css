@@ -1,0 +1,14 @@
+.error{
+    color: rgba(60, 45, 61, 0.8);
+    font-weight: 500;
+    position: absolute;
+    z-index: 1;
+    bottom: 0;
+    border:0;
+    border-radius: 7px;
+    box-shadow:0 0 10px 1px rgba(255,9,34,0.4);
+    margin-top: 5px;
+    padding: 8px;
+    background-color: #fff; 
+
+}

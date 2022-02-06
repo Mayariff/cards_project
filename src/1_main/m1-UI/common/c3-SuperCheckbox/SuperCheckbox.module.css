@@ -1,3 +1,7 @@
+.margin {
+    margin: 15px 0;
+}
+
 .checkbox{
     appearance:none;
     width:40px;
@@ -45,4 +49,10 @@
 
 .checkbox:disabled{
     opacity:0.5;
+}
+
+
+label.checkboxLabel:hover  {
+   /* font-size: 1.17rem;*/
+    color: rgba(0,0,0,0.5);
 }

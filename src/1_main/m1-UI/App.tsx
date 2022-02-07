@@ -12,13 +12,14 @@ import s from "./App.module.css";
 function App() {
     const dispatch =useDispatch()
     const isInitialized = useSelector<AppRootStateType, boolean>(store=> store.app.isInitialized)
-
+    const isLoggedIn= useSelector<AppRootStateType,boolean>(store=>store.login.isLoggedIn)
 
 
     useEffect( ()=> {
         dispatch(initializeAppTC())
     }, [dispatch])
-    if(!isInitialized){
+
+    if(isInitialized && !isLoggedIn){
         return <Link to={PATH.LOGIN_PAGE} />
     }
 
